@@ -59,7 +59,7 @@ $domandeFrequenti =[
             che sono state soggette a una rimozione.
             </li>
 
-            ", 
+        ", 
 
           
 
@@ -107,53 +107,85 @@ $domandeFrequenti =[
         'bigTitle' => "Perché il mio account è associato a un paese?",
 
         'text' =>
-        "
-                    <li>
-                        Il tuo account è associato a un paese (o territorio) nei Termini 
-                        di servizio per poter stabilire due cose:
-                    </li>
+                    "
+                                <li>
+                                    Il tuo account è associato a un paese (o territorio) nei Termini 
+                                    di servizio per poter stabilire due cose:
+                                </li>
 
-                
-                    <li>
-                        La società consociata Google che offre i servizi, tratta le tue 
-                        informazioni ed è responsabile del rispetto delle leggi sulla privacy 
-                        vigenti. Generalmente Google offre i propri servizi per i consumatori 
-                        tramite una delle due società seguenti:
-                    </li>
+                            
+                                <li>
+                                    La società consociata Google che offre i servizi, tratta le tue 
+                                    informazioni ed è responsabile del rispetto delle leggi sulla privacy 
+                                    vigenti. Generalmente Google offre i propri servizi per i consumatori 
+                                    tramite una delle due società seguenti:
+                                </li>
 
-                    <li>
-                        Google Ireland Limited, se gli utenti sono residenti nello Spazio 
-                        economico europeo (paesi dell'Unione europea, oltre a Islanda, 
-                        Liechtenstein e Norvegia) o in Svizzera.
-                    </li>
+                                <li>
+                                    Google Ireland Limited, se gli utenti sono residenti nello Spazio 
+                                    economico europeo (paesi dell'Unione europea, oltre a Islanda, 
+                                    Liechtenstein e Norvegia) o in Svizzera.
+                                </li>
 
-                    <li>
-                        Google LLC, con sede negli Stati Uniti, per il resto del mondo.
-                    </li>
+                                <li>
+                                    Google LLC, con sede negli Stati Uniti, per il resto del mondo.
+                                </li>
 
-                    <li>
-                        La versione dei termini che regola il nostro rapporto, 
-                        che può variare in base alle leggi locali.
-                    </li>
+                                <li>
+                                    La versione dei termini che regola il nostro rapporto, 
+                                    che può variare in base alle leggi locali.
+                                </li>
 
-                    <li>
-                        Tieni presente che i servizi Google sono fondamentalmente gli 
-                        stessi a prescindere dalla società consociata che li offre o dal 
-                        paese a cui è associato il tuo account.
-                    </li>
-       ",
+                                <li>
+                                    Tieni presente che i servizi Google sono fondamentalmente gli 
+                                    stessi a prescindere dalla società consociata che li offre o dal 
+                                    paese a cui è associato il tuo account.
+                                </li>
+                     "
+                    ,
 
-        'softTittle' => "Stabilire il paese associato al tuo account",
     
+      'secondtitle' => "Stabilire il paese associato al tuo account",
+    
+
+        
+        
+                   
     ],
 
 ];
 
 foreach ($domandeFrequenti as $post => $component){
-    echo "<h4>$post</h4>";
+   // echo "<h4>$post</h4>";
+
+
+  // echo "<ul>";
     foreach ($component as $question){
-        echo $question;
+       // echo $question;
+
+
+        $title = $component['bigTitle'];
+        $para = $component['text'];
+     //   $secondTitle = $component['secondtitle'];
+        //var_dump($component);
+
+       // echo $tittle ; $para ; $secondTittle;
+     // echo    $title ;
+     //echo "<p> <h4>$title</h4> <span>$para</span>  </p>";
+
+      //echo "<li> $para</li>";
+
+
+     // echo $title; 
+     //echo $para;
+
+
     }
+   echo "<p> <h4>$title</h4> <span>$para</span>  </p>";
+
+
+ //  echo" </ul>";
+
 
 }
 
@@ -174,6 +206,10 @@ foreach ($domandeFrequenti as $post => $component){
     <title>Document</title>
 </head>
 <body>
+
+
+
+
     
 </body>
 </html>
